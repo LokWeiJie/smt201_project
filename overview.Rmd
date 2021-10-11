@@ -7,8 +7,12 @@ author:
     url: https://google.com
     affiliation: School of Computing and Information Systems, Singapore Management University
     affiliation_url: https://scis.smu.edu.sg/
-  - name: Ankit
-  - name: Sean
+  - name: Ankit Kumar Rai
+    url: https://google.com
+    affiliation: School of Computing and Information Systems, Singapore Management University
+  - name: Sean Micheal Power
+    url: https://google.com
+    affiliation: School of Computing and Information Systems, Singapore Management University
 date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
@@ -20,7 +24,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# 1.0	Introduction 
+# 1.0	Introduction Pls help idk what is going on
 
 The true power of a GIS is its analytical capability.  GIS analysis functions, however, are generic and are not specifically designed for business intelligence applications.  This is particularly true when the analysis involved massive and large data.  To meet the analytical requirements and analysis efficiency of market researchers and business analysts, we need to combine appropriate GIS functions and analysis for modelling the business processes. 
 
