@@ -24,11 +24,14 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# 1.0	Introduction Pls help idk what is going on
+# 1.0	About the Project
 
-The true power of a GIS is its analytical capability.  GIS analysis functions, however, are generic and are not specifically designed for business intelligence applications.  This is particularly true when the analysis involved massive and large data.  To meet the analytical requirements and analysis efficiency of market researchers and business analysts, we need to combine appropriate GIS functions and analysis for modelling the business processes. 
+In 2019, during his annual state of the union address at the parliament, President Joko Widodo announced a plan to relocate the capital of Jakarta to the province East Kalimantan on the island of Borneo. 
 
-This hands-on exercise consists of two major sections.  First, you will learn the basic concept of accessibility from geospatial perspective. You will also learn how to use appropriate raster GIS analyse function and mapping techniques to analyse and visualize accessibility maps. 
+This yet-to-built capital city, where the government would shift all administrative functions to, lies more than 1,000 kilometers away from the current capital of Jakarta. After in-depth studies conducted by the government, it is concluded that the capital is best built in part of North Penajam Paser Regency (Kabupaten Penajam Utara) and part of Kutai Kertanegara Regency (Kabupaten Kutai Kartanegara) in East Kalimantan. 
+
+The plan is part of a strategy to reduce developmental inequality between Java and other islands in the Indonesian archipelago and to reduce Jakarta’s burden as Indonesia’s primary hub.
+
 
 ## 1.1	Data Preparation
   
