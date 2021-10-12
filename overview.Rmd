@@ -1,7 +1,7 @@
 ---
 title: "Overview"
 description: |
-  An overview of the GIS project bruh.
+  An overview of the GIS project.
 author:
   - name: Lok Wei Jie 
     url: https://google.com
@@ -32,43 +32,56 @@ This yet-to-built capital city, where the government would shift all administrat
 
 The plan is part of a strategy to reduce developmental inequality between Java and other islands in the Indonesian archipelago and to reduce Jakarta’s burden as Indonesia’s primary hub.
 
+![](img/new_capital.jpg)
+Source: The Asean Post
 
-## 1.1	Data Preparation
+## 1.1	Project Objectives
   
-Two GIS data are available for the analysis.  They are:
+There are 2 main objectives:
 
-+ Location of primary, secondary, mixed and JC (i.e. Education).
-+ Outline map of Singapore (i.e. CoastalOutline).  
+1. Report of Survey and GIS of proposed capital area
 
-### 1.1.1	Add the GIS data into QGIS Project
+2. Site selection of new capital site
 
-Before you can start to perform any analysis, you need to start a new QGIS project.  
+### 1.1.1	Report of Survey and building of GIS
 
->DIY: Using the steps you had learned from last lesson, add the Education and CoastalOutline into the newly created QGIS project. 
+The province of East Kalimantan, specifically the districts of Kota Balipapan, Kota Samarinda, and selected kecamatan (districts) and sub-districts of North Penajam Paser and Kutai Kartanegara Regencies will be surveyed and be used to build a GIS.
 
-### 1.1.2	Using attribute query to select a subset from a master layer
+The GIS and survey will focus on the following aspects:
 
-The Education layer consists of locations of education institutions such as primary schools, secondary school, mixed and JC.  We are only interested on education institutions that belong to primary and secondary schools.
+* Population and Demographic
 
->DIY: Using the steps you had learned from last lesson, extract and save the primary and secondary schools in two separate GIS vector layers.    
+* Economic and Businesses
 
-Your screen should look similar to the figure below.
+* Transport and Communication
 
-![](img/image1.jpg)
+* Infrastructure
 
-# 2.0	Raster Data Modelling
+* Environment and Hazard
 
-In this exercise, you will learn how to model raster data.  The exercise focusses on how to rasterise a vector GIS data layer using QGIS geoprocessing functions.   
+### 1.1.2	Site Selection of new capital site
 
-## 2.1	Editing attribute data
+The new capital site will be selected based on its suitability through GIS analysis. This new site will adhere to the following criteria:
 
-In this section, you will create a new field in the attribute table of a vector GIS data and update values of the newly created field.  You will name the field as *POI_CODE*.  The data type of this data field is integer.
-  
-At **Browser** panel, right-click on the Primary Schools layer.
-**Select Open Attribute Table** from the context menu.
+* It should be between 4500-5500 hectares in size
 
-The **Attribute table** dialog window of *Primary Schools* appears.
+* It should avoid steep slope. Steep slope developments are relative more costly because they involve cut-and-fill and is less environmental friendly.
 
+* It should be away from potential natural disaster risk areas such as sea coasts, major rivers and volcanoes.
 
+* It should be near to current urban settlement areas but not at the current major settlement areas.
 
+* It should avoid natural forest as much as possible.
+
+* It should avoid areas prone to forest fire.
+
+* It should be highly accessible via road transport.
+
+* It should be near to airport(s) and seaport(s).
+
+# 2.0	Project Milestones
+
+# 3.0 References
+
+1. The Asean Post https://theaseanpost.com/article/indonesias-new-capital-hold-due-pandemic
 
