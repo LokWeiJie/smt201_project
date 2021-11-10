@@ -13,6 +13,8 @@ navbar:
       href: survey.html
     - text: "Site Selection Report"
       href: site.html
+    - text: "Project Poster"
+      href: mydraft.html
   right:
     - text: "Home"
       href: index.html
