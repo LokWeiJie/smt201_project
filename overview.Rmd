@@ -17,67 +17,49 @@ date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
     toc: true
-    toc_depth: 4
+    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# 1.0	About the Project
+# 1.0	Project Motivation
 
-In 2019, during his annual state of the union address at the parliament, President Joko Widodo announced a plan to relocate the capital of Jakarta to more than 1,000km away to the province of East Kalimantan on the island of Borneo. 
+Jarkata, the sinking city, is experiencing first-hand the effects of rising sea levels. Additionally,  it has its own unique problem. The segregation and overpopulation in Jakarta further burden the already uneven water piping system and thus cause a structural restriction of water to most of its residents. This forces them to source water from pumping groundwater. 
 
-After in-depth studies conducted by the government, it is concluded that the capital is best built in part of North Penajam Paser Regency (Kabupaten Penajam Utara) and part of Kutai Kertanegara Regency (Kabupaten Kutai Kartanegara) in East Kalimantan. 
+With large amounts of groundwater being pumped, the city’s foundations have been lowered with some places sinking over four meters in the last twenty years. Moving the capital and its population with it would ease the strain on the water piping system and thus reduce the need for pumping groundwater, stabilizing the problem. 
 
-The plan is part of a strategy to reduce developmental inequality between Java and other islands in the Indonesian archipelago and to reduce Jakarta’s burden as Indonesia’s primary hub.
 
 ![](img/new_capital.jpg)
 Source: The Asean Post
 
 ## 1.1	Project Objectives
   
-There are 2 main objectives:
+To do a thorough investigation of East Kalimantan with the intention of finding the best location for the new capital. The new location should be sizable, safe, accessible and easy to develop.
 
-1. Report of Survey and GIS of proposed capital area
+## 1.2	Scope
 
-2. Site selection of new capital site
+By making use of QGIS software and data gathered from Indonesia Geospasial we plan to analyse each of the previously mentioned categories.
 
-### 1.1.1	Report of Survey and building of GIS
+These categories are:
 
-The province of East Kalimantan, specifically the districts of Kota Balipapan, Kota Samarinda, and selected kecamatan (districts) and sub-districts of North Penajam Paser and Kutai Kartanegara Regencies will be surveyed and be used to build a GIS.
+* Sizable
+  + Area between 4500 to 5500 hectares
 
-The GIS and survey will focus on the following aspects:
+* Safe
+  + Away from potential natural disaster risk areas like sea coasts and major rivers
+  + Not in areas prone to forest fire
 
-* Population and Demographic
+* Accessible
+  + Highly accessible by roads
+  + Close proximity to airports and seaports
 
-* Economic and Businesses
+* Ease of development
+  + Avoid steep slopes
+  + Avoid natural forest
+  + Near current existing settlement but not at current major settlements
 
-* Transport and Communication
-
-* Infrastructure
-
-* Environment and Hazard
-
-### 1.1.2	Site Selection of new capital site
-
-The new capital site will be selected based on its suitability through GIS analysis. This new site will adhere to the following criteria:
-
-* It should be between 4500-5500 hectares in size
-
-* It should avoid steep slope. Steep slope developments are relative more costly because they involve cut-and-fill and is less environmental friendly.
-
-* It should be away from potential natural disaster risk areas such as sea coasts, major rivers and volcanoes.
-
-* It should be near to current urban settlement areas but not at the current major settlement areas.
-
-* It should avoid natural forest as much as possible.
-
-* It should avoid areas prone to forest fire.
-
-* It should be highly accessible via road transport.
-
-* It should be near to airport(s) and seaport(s).
 
 # 2.0	Project Milestones
 
