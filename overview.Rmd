@@ -14,13 +14,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # 1.0	Project Motivation
 
-Jarkata, the sinking city, is experiencing first-hand the effects of rising sea levels. Additionally,  it has its own unique problem. The segregation and overpopulation in Jakarta further burden the already uneven water piping system and thus cause a structural restriction of water to most of its residents. This forces them to source water from pumping groundwater. 
+Jakarta, the sinking city, is experiencing first-hand the effects of rising sea levels [1]. Additionally,  it has its own unique problem. The segregation and overpopulation in Jakarta further burden the already uneven water piping system and thus cause a structural restriction of water to most of its residents. This forces them to source water from pumping groundwater. 
 
-With large amounts of groundwater being pumped, the city’s foundations have been lowered with some places sinking over four meters in the last twenty years. Moving the capital and its population with it would ease the strain on the water piping system and thus reduce the need for pumping groundwater, stabilizing the problem. 
+With large amounts of groundwater being pumped, the city’s foundations have been lowered with some places sinking over four meters in the last twenty years [2]. Moving the capital and its population with it would ease the strain on the water piping system and thus reduce the need for pumping groundwater, stabilizing the problem. 
 
 
 ![](img/new_capital.jpg)
-Source: The Asean Post
+Source: The Asean Post [3]
 
 ## 1.1	Project Objectives
   
@@ -54,9 +54,9 @@ These categories are:
 ![](img/GanttChart201.jpg)
 
 # 3.0 References
-1. https://www.nbcnews.com/news/world/indonesia-move-capital-sinking-jakarta-borneo-n1046651
+[1] https://www.nbcnews.com/news/world/indonesia-move-capital-sinking-jakarta-borneo-n1046651
 
-2. https://www.vox.com/22295302/why-jakarta-sinking-flooding-colonialism 
+[2] https://www.vox.com/22295302/why-jakarta-sinking-flooding-colonialism 
 
-3. The Asean Post https://theaseanpost.com/article/indonesias-new-capital-hold-due-pandemic
+[3] The Asean Post https://theaseanpost.com/article/indonesias-new-capital-hold-due-pandemic
 

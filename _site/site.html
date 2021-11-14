@@ -2089,6 +2089,97 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#factors-for-task-2">1.0 Factors for Task 2</a>
+<ul>
+<li><a href="#merging-layers">1.1 Merging Layers</a></li>
+</ul></li>
+<li><a href="#rasterizing-the-layers">2.0 Rasterizing the layers</a></li>
+<li><a href="#creating-proximity-layer">2.1 Creating proximity layer</a></li>
+<li><a href="#raster-based-gis-multiple-criteria-decision-making-mcda">3.0 Raster-based GIS Multiple-Criteria Decision Making (MCDA)</a>
+<ul>
+<li><a href="#ahp-analysis">3.1 AHP Analysis</a></li>
+</ul></li>
+<li><a href="#identifying-suitable-sites">4.0 Identifying suitable sites</a>
+<ul>
+<li><a href="#vectorise-suitable-sites">4.1 Vectorise suitable sites</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h1 id="factors-for-task-2">1.0 Factors for Task 2</h1>
+<p>For Task 2, we have 5 factors to consider, namely,</p>
+<ul>
+<li>Have a size between 4500-5500 hectares</li>
+<li>Avoid steep slope</li>
+<li>Far away from potential natural disasters such as major rivers</li>
+<li>Near but not at the current major settlement areas</li>
+<li>Avoid natural forest as much as possible</li>
+<li>Avoid areas prone to forest fire</li>
+<li>Highly accessible via road transport</li>
+<li>Near Airports and Seaports</li>
+</ul>
+<p>To try to compact this issue as much as possible, we will be combining the layers of airports and seaports, merging the hotspots found from the year 2018 and 2019 as well as merging all the forest layers in the study area.</p>
+<h2 id="merging-layers">1.1 Merging Layers</h2>
+<p>In this example, we will merge the two Hotspot layers. The following steps will be reproducible to merge the other layers together. Firstly, ensure that you have the 2 following layers, <strong>“Titik Api Hotspot se-Indonesia Tahun 2018.shp”</strong> and <strong>“Titik Api Hotspot se-Indonesia Tahun 2019.shp”</strong> Next, go to <strong>Vectors -&gt; Data Management Tools -&gt; Merge Vector Layers</strong>… and choose the 2 hotspot layers as your input layers and run it.</p>
+<p><img src="img/mergevectorlayers.jpg" /></p>
+<p>Once the output is created, <strong>right click</strong> on the output layer and select the <strong>open attribute table</strong>. Click on the <strong>pencil icon</strong> on the corner left to toggle editing and select <strong>open field calculator</strong>, which is the 4th icon from the right.</p>
+<p><img src="img/attributetable%20toggle.jpg" /></p>
+<p>Ensure that the <strong>Create a new field</strong> is checked. Put <strong>POI_Code</strong> as the <strong>Output field name</strong> and <strong>1</strong> as the expression. This column will be used for burn-in values(if any).</p>
+<p><img src="img/poi_code.jpg" /></p>
+<p>Next, select <strong>Delete field</strong>, which is the 6th icon from the right. Select the <strong>fid</strong> field to be deleted.</p>
+<p><img src="img/deletefield.jpg" /></p>
+<p>Once done, save the changes and save the layer into the kalimantan geopackage, named <strong>HotSpot_18_19_Merged</strong>. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
+<p>Repeat these steps to merge all the airports and seaports into 1 layer as well as all the forest within the study area into another layer. Name them <strong>Air_Sea_Ports_Merged</strong> and <strong>Forest_Merged</strong> respectively.</p>
+<h1 id="rasterizing-the-layers">2.0 Rasterizing the layers</h1>
+<p>From the menu bar of QGIS, select <strong>Processing -&gt; Toolbox</strong>. The processing toolbox pane appears on the right side of the Map View window.</p>
+<p><img src="img/toolbox.jpg" /></p>
+<p>From the Geoprocessing Toolbox, click on <strong>GDAL -&gt; Vector conversion -&gt; Rasterize (vector to raster)</strong>. The dialog window appears. Use the following parameters:</p>
+<ul>
+<li><strong>Input layer</strong>: HotSpot_18_19_Merged.</li>
+<li><strong>Field to use for a burn in value</strong>: POI_CODE</li>
+<li><strong>Output raster size units</strong>: Georeferenced units</li>
+<li><strong>Width/Horizontal resolution</strong>: 50</li>
+<li><strong>Height/Vertical resolution</strong>: 50</li>
+<li><strong>Output extent</strong>, select <strong>Calculate from layer</strong> -&gt; <strong>Geopackaged Dissolved Study Area</strong> Your Screen should look something similar to the figure below</li>
+</ul>
+<p><img src="img/Rasterize_Siteselection.jpg" /></p>
+<p>Click the Run button. A new raster layer will be created. Using the steps from before, save the raster into the kalimantan geopackage and name it Rasterized_HotSpots. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving. Repeat the steps for all the other layers.</p>
+<h1 id="creating-proximity-layer">2.1 Creating proximity layer</h1>
+<p>From the Processing Toolbox panel, search for <strong>Proximity(raster distance)</strong>, under GDAL. Double click on it. Use the following parameters: * <strong>Input layer</strong>: Rasterized_HotSpots * <strong>Distance units</strong>:Georeferenced coordinates The dialog should look somewhat similar to this.</p>
+<p><img src="img/proximity.jpg" /></p>
+<p>Click on the Run button. A new proximity map will be added. To observe how it works, check your hotspot layer and your proximity layer. Zoom into the study area and right click on the proximity layer and select Stretch Using current Extent which will give you a clearer view. Using the steps from earlier, save this into the kalimantan geopackage and name the layer *<strong>Proximity_Hotspot</strong>. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving. Repeat this process for all the other layers.</p>
+<h1 id="raster-based-gis-multiple-criteria-decision-making-mcda">3.0 Raster-based GIS Multiple-Criteria Decision Making (MCDA)</h1>
+<p>As all the factors have different scales upon which criteria is measured, it is necessary that factors are standardized before combination using the formula below:</p>
+<p><img src="img/formula.jpg" /></p>
+<p>Using the raster calculator, you should be able to derive the factor scores layers for all the layers able. The dialog should look similar to this.</p>
+<p>Repeat these steps for all the factors.</p>
+<h2 id="ahp-analysis">3.1 AHP Analysis</h2>
+<p>Using the excel sheet provided by SBC Associates, list down all the 7 different factors on the rows. We have determined the importance of each factor according to the rating on the left side of the excel sheet as seen here.</p>
+<p><img src="img/AHP_Pic.jpg" /></p>
+<p>Ensure that the consistency check is below 10% for it to be a good evaluation.</p>
+<p>Now, we will compute the Land Suitability Layer by using the factor score derived above. Using the raster calculator of QGIS, we will be using this expression:</p>
+<blockquote>
+<p>“<a href="mailto:Factorised_Slope@1" class="email">Factorised_Slope@1</a>” * 0.247 + “<a href="mailto:Factorised_HotSpot@1" class="email">Factorised_HotSpot@1</a>” * 0.221 + “<a href="mailto:Factorized_River@1" class="email">Factorized_River@1</a>” * 0.192 + “<a href="mailto:Factorized_Forest@1" class="email">Factorized_Forest@1</a>”<em>0.115 + “<a href="mailto:Factorised_Road@1" class="email">Factorised_Road@1</a>”</em> <a href="mailto:0.083+%22Factorised_Port@1" class="email">0.083+"Factorised_Port@1</a>“* 0.071 +”Factor_major_settlement</p>
+</blockquote>
+<p>Click on run.</p>
+<h1 id="identifying-suitable-sites">4.0 Identifying suitable sites</h1>
+<p>Once the MCDA model is done, we used a <strong>composite factor score of at least 0.5</strong> to evaluate site suitability, according to many senior planners.To do this, we will open up <strong>Toolbox -&gt;Search for Reclassify by table</strong>. Add 2 tables with binary score of 0 and 1, 1 being suitable and 0 being not suitable, it should look something like this.</p>
+<p><img src="img/Reclassify.jpg" /></p>
+<p>Ensure that the <strong>output data type</strong> is <strong>Float32</strong>. Click on run.</p>
+<p>The MCDA model should look something like this:</p>
+<p>We will then save it as AHP_capitalcity into the kalimantan geopackage. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
+<h2 id="vectorise-suitable-sites">4.1 Vectorise suitable sites</h2>
+<p>From the menu bar, select <strong>Raster -&gt; Conversion -&gt; Polygonize(Raster to Vector)</strong>. Use the following parameters:</p>
+<ul>
+<li><strong>Input Layer</strong>: AHP_capitalcity</li>
+<li><strong>Name of the field to create</strong>: Sites.</li>
+<li>Ensure that <strong>Use 8-connectedness</strong> is <strong>unchecked</strong>.</li>
+</ul>
+<p>Click on run. A new temporary layer called Vectorized will be added. Save the final layer into the kalimantan GeoPackage. Name it Potential_Capital_Cities. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
