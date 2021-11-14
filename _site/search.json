@@ -34,8 +34,9 @@
           "url": {}
         }
       ],
+      "date": "`r Sys.Date()`",
       "contents": "\r\nRead through our project through the following links:\r\nProject Overview\r\nData Preparation\r\nReport of Survey\r\nSite Selection\r\nProject Poster\r\nFull Report\r\nProject Github\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-14T16:51:23+08:00"
+      "last_modified": "2021-11-14T18:28:51+08:00"
     },
     {
       "path": "mydraft.html",
@@ -62,9 +63,8 @@
       "title": "Overview",
       "description": "An overview of the GIS project by G1T10.\n",
       "author": [],
-      "date": "`r Sys.Date()`",
       "contents": "\r\n\r\nContents\r\n1.0 Project Motivation\r\n1.1 Project Objectives\r\n1.2 Scope\r\n\r\n2.0 Project Milestones\r\n3.0 References\r\n\r\n1.0 Project Motivation\r\nJarkata, the sinking city, is experiencing first-hand the effects of rising sea levels. Additionally, it has its own unique problem. The segregation and overpopulation in Jakarta further burden the already uneven water piping system and thus cause a structural restriction of water to most of its residents. This forces them to source water from pumping groundwater.\r\nWith large amounts of groundwater being pumped, the city’s foundations have been lowered with some places sinking over four meters in the last twenty years. Moving the capital and its population with it would ease the strain on the water piping system and thus reduce the need for pumping groundwater, stabilizing the problem.\r\n Source: The Asean Post\r\n1.1 Project Objectives\r\nTo do a thorough investigation of East Kalimantan with the intention of finding the best location for the new capital. The new location should be sizable, safe, accessible and easy to develop.\r\n1.2 Scope\r\nBy making use of QGIS software and data gathered from Indonesia Geospasial we plan to analyse each of the previously mentioned categories.\r\nThese categories are:\r\nSizable\r\nArea between 4500 to 5500 hectares\r\n\r\nSafe\r\nAway from potential natural disaster risk areas like sea coasts and major rivers\r\nNot in areas prone to forest fire\r\n\r\nAccessible\r\nHighly accessible by roads\r\nClose proximity to airports and seaports\r\n\r\nEase of development\r\nAvoid steep slopes\r\nAvoid natural forest\r\nNear current existing settlement but not at current major settlements\r\n\r\n2.0 Project Milestones\r\n\r\n3.0 References\r\nhttps://www.nbcnews.com/news/world/indonesia-move-capital-sinking-jakarta-borneo-n1046651\r\nhttps://www.vox.com/22295302/why-jakarta-sinking-flooding-colonialism\r\nThe Asean Post https://theaseanpost.com/article/indonesias-new-capital-hold-due-pandemic\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-11-14T16:15:45+08:00"
+      "last_modified": "2021-11-14T18:28:09+08:00"
     },
     {
       "path": "site.html",

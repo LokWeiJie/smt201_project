@@ -11,6 +11,7 @@ author:
     affiliation: School of Computing and Information Systems, Singapore Management University
   - name: Sean Michael Power
     affiliation: School of Computing and Information Systems, Singapore Management University
+date: "`r Sys.Date()`"
 site: distill::distill_website
 ---
 
