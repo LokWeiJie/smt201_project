@@ -1,0 +1,13 @@
+---
+title: "Report of Survey"
+description: |
+  Task 1: A Report of survey of the new capital area of East Kalimantan.
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

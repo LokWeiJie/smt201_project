@@ -2,13 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
 
-<title>A Better Reproducible Poster Title</title>
+<!--
+Google fonts api stuff
+-->
+
+
+
+<title>G1T10 Jakarta the Sinking City</title>
 
 <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content=""/>
@@ -694,38 +705,167 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */</style>
 
-
-<!--
-Font-awesome icons ie github or twitter
--->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
-
-<!--
-Google fonts api stuff
--->
-<link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Rasa' rel='stylesheet'>
-
-<!--
-Here are the required style attributes for css to make this poster work :)
--->
 <style>
 @page {
-size: 23.39in 33.11in;
+size: 33.11in 23.39in;
 margin: 0;
 padding: 0;
 }
 body {
-margin: 0px;
-padding: 0px;
-width: 23.39in;
-height: 33.11in;
-text-align: justify;
+margin: 0;
 font-size: 45px;
-line-height: 1.05;
+width: 33.11in;
+height: 23.39in;
+padding: 0;
+text-align: justify;
+font-family: Palatino;
 }
-/* RMarkdown Class Styles */
+.poster_wrap {
+width: 33.11in;
+height: 23.39in;
+padding: 0cm;
+}
+.title_container {
+width: 33.11in;
+height: calc(23.39in * 0.15);
+overflow: hidden;
+background-color: #1e3d59;
+border: 0 solid #ffc13b;
+}
+.logo_left {
+float: left;
+width: 10%;
+height: 100%;
+background-color: #1e3d59;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logo_right {
+float: right;
+width: 10%;
+height: 100%;
+background-color: #1e3d59;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.poster_title {
+text-align: center;
+position: relative;
+float: left;
+width: 80%;
+height: 100%;
+color: #FFFFFF;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+}
+#title {
+font-family: Palatino;
+}
+/* unvisited link */
+a:link {
+color: #ff6e40;
+}
+.mybreak {
+  break-before: column;
+}
+/* visited link */
+a:visited {
+color: #ff6e40;
+}
+
+/* mouse over link */
+a:hover {
+color: #ff6e40;
+}
+
+/* selected link */
+a:active {
+color: #ff6e40;
+}
+.poster_body {
+-webkit-column-count: 5; /* Chrome, Safari, Opera */
+-moz-column-count: 5; /* Firefox */
+column-count: 5;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 1mm;
+-moz-column-rule-width: 1mm;
+column-rule-width: 1mm;
+-webkit-column-rule-style: dashed;
+-moz-column-rule-style: dashed;
+column-rule-style: dashed;
+-webkit-column-rule-color: #1e3d59;
+-moz-column-rule-color: #1e3d59;
+column-rule-color: #1e3d59;
+column-gap: 1em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+height: 100%;
+color: #000000
+background-color: #ffffff;
+}
+.poster_title h1 {
+font-size: 75pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_body_wrap{
+width: calc(33.11in + 0 + 0);
+height: calc(23.39in * 0.83);
+padding-top: calc(23.39in * 0.005);
+padding-bottom: calc(23.39in * 0.01);
+background-color: #ffffff;
+}
+.poster_title h3 {
+color: #ffc13b;
+font-size: 50pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_title h3 > sup {
+  font-size: 35pt;
+  margin-left: 0.02em;
+}
+.poster_title h5 {
+color: #FFFFFF;
+font-size: 35pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+img {
+margin-top: 2cm;
+margin-bottom: 0;
+}
+.section {
+  padding: 0.2em;
+}
+.poster_body h1 {
+text-align: center;
+color: #FFFFFF;
+font-size: 65pt;
+border: 2mm solid #1e3d59;
+background-color: #1e3d59;
+border-radius: 4mm 0mm;
+margin-top: 2mm;
+margin-bottom: 2mm;
+font-weight: normal;
+}
+.poster_body h2 {
+color: #000000;
+font-size: 40pt;
+padding-left: 4mm;
+font-weight: normal;
+}
+.span {
+width: 200%;
+}
 /* center align leaflet map,
 from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
 .html-widget {
@@ -743,297 +883,71 @@ background-color: #dddddd40;
 border-radius: 4mm;
 padding: 4mm;
 width: 75%;
-margin: auto;
-margin-top: 1em;
-margin-bottom: 1em;
 /* align-items: center; */
+margin: auto;
+padding-left: 2cm;
 }
 code.sourceCode.r{
 background-color: transparent;
 font-size: 20pt;
 border-radius: 2mm;
 }
-code {
+.caption {
 font-size: 25pt;
+}
+.table caption {
+font-size: 25pt;
+padding-bottom: 3mm;
+
+}
+code {
+font-size: 1em;
 font-family: monospace;
-background-color: #00808024;
-color: #0b4545;
+background-color: #ffc13b24;
+color: #1e3d59;
 padding: 1.2mm;
-line-height: 1;
 border-radius: 2mm;
+}
+.poster_title code {
+font-size: 1em;
+}
+table {
+font-size: 40px;
+margin: auto;
+border-top: 3px solid #666;
+border-bottom: 3px solid #666;
+}
+table thead th {
+border-bottom: 3px solid #ddd;
+}
+td {
+padding: 8px;
+}
+th {
+padding: 15px;
 }
 caption {
 margin-bottom: 10px;
+}
+.poster_body p {
+margin-right: 4mm;
+margin-left: 4mm;
+margin-top: 6mm;
+margin-bottom: 10mm;
+}
+.poster_body ol {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+#ul {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+.references p {
 font-size: 20pt;
-font-style: italic;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #00808020;
-}
-.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
-  border-spacing: 0;
-  font-size: 40%;
-  border-style: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 1em;
-  padding-left: 1em;
-  line-height: 1em;
-}
-table {
-  margin: auto;
-}
-th {
-  padding-left: 5mm;
-  padding-right: 5mm;
-}
-.caption {
-font-size: 20pt;
-font-style: italic;
-padding-top: 0;
-}
-.references {
-font-size: 20px;
-line-height: 90%;
-}
-/* Create three unequal columns that floats next to each other */
-.column {
-float: left;
-padding: 0px;
-}
-.outer {
-width: 23.39in;
-height: calc(33.11in *  (1 - 0.2 - 0.1 - 0.01) );
--webkit-column-count: 3; /* Chrome, Safari, Opera */
--moz-column-count: 3; /* Firefox */
-column-count: 3;
--webkit-column-fill: auto;
--moz-column-fill: auto;
-column-fill: auto;
-column-gap: 0;
-padding-left: 0cm;
-padding-right: 0cm;
-/* -webkit-column-rule-width: 50%;
--moz-column-rule-width: 50%;
-column-rule-width: 50%; */
--webkit-column-rule-style: none;
--moz-column-rule-style: none;
-column-rule-style: none;
--webkit-column-rule-color: black;
--moz-column-rule-color: black;
-column-rule-color: black;
-background-color: #ffffff;
-font-family: Rasa;
-margin-top: calc(33.11in *  0.2 );
-padding-top: 1em;
-padding-bottom: 1em;
-}
-span.citation {
-  color: #008080;
-  font-weight: bold;
-}
-a {
-text-decoration: none;
-color: #008080;
-}
-#title {
-font-size: 125pt;
-text-align: left;
-margin: 0;
-line-height: 98%;
-border-bottom: 0;
-font-weight: normal;
-background: 0;
-}
-#author {
-color: #0b4545;
-margin: 0;
-line-height: 85%;
-font-size: 1.17em;
-}
-#affiliation {
-padding-top: 0.1em;
-color: ;
-font-style: italic;
-font-size: 25px;
-margin: 0;
-}
-sup {
-color: #cc0000;
-}
-.affiliation sup {
-font-size: 20px;
-}
-.author {
-text-align: left;
-}
-.author sup {
-font-size: 30px;
-}
-.author_extra {
-color: #008080;
-margin: 0;
-line-height: 85%;
-font-size: 35px;
-text-align: left;
-}
-.outer h1, h2, h3, h4, h5, h6 {
-text-align: center;
-margin: 0;
-font-weight: bold;
-}
-.section h1 {
-  text-align:center;
-  padding-bottom:5px;
-  background:
-    linear-gradient(
-      to left,
-      #ffffff 1%,
-      #ffffff 20%,
-      #0b454575 33%,
-      #0b4545 50%,
-      #0b454575 66%,
-      #ffffff 80%,
-      #ffffff 99%
-    )
-    left
-    bottom
-    #ffffff
-    no-repeat;
-  background-size:100% 5px ;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-.outer h2 {
-text-align: center;
-}
-.outer p, .level2 {
-color: #000000;
-}
-.outer ol {
-padding-left: 8%;
-padding-right: 8%;
-text-align: left;
-}
-.main {
-width: 23.39in;
-height: calc(33.11in * 0.2);
-position: absolute;
-background-color: #0b4545;
-color: #ffffff90;
-font-family: Special Elite;
-background-image: linear-gradient(#0b4545 50%,#008080);
-}
-.main strong {
-color: #ffffff;
-}
-.main strong > sup {
-color: #ffffff;
-}
-.main sup {
-color: #ffffff90;
-}
-#main-img-left {
-width: 10%;
-left: 0.5in;
-bottom: 0.2in;
-position: absolute;
-}
-#main-img-center {
-width: 10%;
-left: calc(23.39in * 0.45);
-bottom: 0.5in;
-position: absolute;
-}
-#main-img-right {
-width: 10%;
-right: 0.5in;
-bottom: 0.2in;
-position: absolute;
-}
-.main p {
-font-size: 150px;
-font-family: Special Elite;
-text-align: center;
-margin: 0;
-position: absolute;
-top: 50%;
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-margin-left: 1em;
-}
-.fab {
-color: #00000030;
-font-size: 25px;
-}
-.twitter, i {
-color: #00000030;
-font-size: 35px;
-text-decoration: none;
-}
-a.email {
-text-decoration: none;
-color: #00000030;
-font-size: 35px;
-}
-.envelope {
-color: #00000030;
-font-size: 5px;
-text-decoration: none;
-}
-.poster_wrap {
-width: 23.39in;
-height: 33.11in;
-padding: 0cm;
-}
-.main_bottom {
-width: 23.39in;
-height: calc(33.11in * 0.1);
-margin-top: calc(33.11in * (1 - 0.1));
-position: absolute;
-background-color: #0b4545;
-background-image: linear-gradient(#008080 10%, #0b4545);
-}
-.section {
-  padding-left: 10mm;
-  padding-right: 10mm;
-}
-span > #tab:mytable {
-  font-weight: bold;
 }
 .orcid img {
-  width: 3%;
-}
-.emphasis {
-  background-color: #008080;
-  color: #ffffff;
-  border: solid #0b2045 3mm;
-  margin: 1em;
-  padding-left: 0;
-  padding-right: 0;
-}
-.emphasis h1 {
-  font-weight: bold;
-  background: none;
-  background-color: #0b2045;
-  padding-bottom: 5mm;
-  padding-top: 1mm;
-  margin-top: -1mm;
-  margin-right: -1mm;
-  margin-left: -1mm;
-}
-.emphasis blockquote {
-  border: 0;
-}
-.emphasis ol {
-  padding: 0;
-  padding-left: 8%;
-  font-size: 100%;
-  font-weight: bold;
-}
-.emphasis p {
-  color: #ffffff;
+  width: 1em;
 }
 </style>
 </head>
@@ -1047,12 +961,13 @@ span > #tab:mytable {
 <a href="overview.html">Overview</a>
 <a href="dataprep.html">Data Preparation</a>
 <a href="survey.html">Report of Survey</a>
-<a href="site.html">Site Selection Report</a>
+<a href="site.html">Site Selection</a>
 <a href="mydraft.html">Project Poster</a>
+<a href="report.html">Full Report</a>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="https://github.com/LokWeiJie/smt201_project">Project Github</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -1062,102 +977,61 @@ span > #tab:mytable {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="poster_wrap">
-
-<div class="column outer">
-<div class="section">
-<h1 id="title"><strong>A Better Reproducible Poster Title</strong></h1><br>
-<h3 id="author" class="author">
-
-<strong>W. Brent Thorne</strong><sup> 1, <a class="orcid" href="https://orcid.org/0000-0002-1099-3857"><img src="https://raw.githubusercontent.com/brentthorne/posterdown/master/images/orcid.jpg"></a></sup><br>
-<a class="twitter" href="https://mobile.twitter.com/brentthorne18"><i class="fab fa-twitter"></i>&nbsp;&nbsp;@brentthorne18</a><br>
-
-<a class='envelope'><i class="fas fa-envelope"></i></a> <a href="mailto:bthorne2@brocku.ca" class="email">bthorne2@brocku.ca</a> <br>
- Another G. Contributor<sup> 2</sup><br>
-
-<a class='envelope'><i class="fas fa-envelope"></i></a> <a href="mailto:ag.con@posterdown.net" class="email">ag.con@posterdown.net</a> <br>
-     </h3>
-
-<h5 id="author_extra", class="author_extra">
-  Person Three<sup>3</sup>
- Person Four<sup>2</sup>
- Person Five<sup>3</sup>
- Person Six<sup>3</sup>
- A. Seventh Author<sup>2</sup>
-</h5>
-
-
-<p id="affiliation" class="affiliation">
-<sup>1</sup> Department of Earth Science, Brock University<br> <sup>2</sup> Department of Graphics and Layouts, University of Posters; Canada<br> <sup>3</sup> Another Institute of a place where work gets done, Earth, Milky Way
-</p>
+<div class="title_container">
+<!-- Left Logo  -->
+<div class="logo_left">
+</div>
+<!-- Poster Title -->
+<div class= "poster_title">
+<h1 id="title">G1T10 Jakarta the Sinking City</h1>
+<h3 id="author">Ankit Kumar Rai<sup></sup>, Sean Michael Power<sup></sup>, Lok Wei Jie<sup></sup></h3><br>
+<h5 id="affiliation"><sup></sup> Singapore Management University</h5>
+</div>
+<!-- Right Logo  -->
+<div class="logo_right">
+</div>
 </div>
 
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<p>This is the <code>posterdown_betterport</code> template for the {posterdown} package! I was inspired by the twitter thread of <a href="https://mobile.twitter.com/mikemorrison/status/1110191245035479041">Mike Morrison</a> and wanted to apply the <code>#betterposter</code> concept to the reproducible (yet simple to use) functionality of the {posterdown} package <span class="citation">(<a href="#ref-R-posterdown" role="doc-biblioref">Thorne 2019</a>)</span>. If you’re not an R user don’t sweat as you do <strong>NOT</strong> need to use it at all! Feel free to use only the Markdown functionality of this package :)</p>
+<div class='poster_body_wrap'>
+<div class='poster_body'>
+<div id="problem" class="section level1">
+<h1>Problem</h1>
+<p>Jakarta is sinking,</p>
+<p>Welcome to <code>posterdown</code> ! This is my attempt to provide a semi-smooth workflow for those who wish to take their R Markdown skills to the conference world. Most features from R Markdown are available in this package such as Markdown section notation, figure captioning, and even citations like this one <span class="citation">(Allaire et al. 2021)</span>. The rest of this example poster will show how you can insert typical conference poster features into your own document.</p>
 <div id="objectives" class="section level2">
 <h2>Objectives</h2>
 <ol style="list-style-type: decimal">
-<li>Pick a template layout.</li>
-<li>Write/ create your poster content distraction free.</li>
-<li>Let posterdown do its thing!</li>
+<li>Easy to use reproducible poster design.</li>
+<li>Integration with R Markdown.</li>
+<li>Easy transition from <code>posterdown</code> to <code>pagedown</code> report or manuscript documents <span class="citation">(Xie et al. 2021)</span>.</li>
 </ol>
 </div>
 </div>
 <div id="methods" class="section level1">
 <h1>Methods</h1>
-<p>I will show here how to include poster elements that may be useful, such as an equation using mathjax:</p>
-<p><span class="math display">\[
-E = mc^2
-\]</span></p>
-<p>To reference a citation you can add your <code>.bib</code> file to the working directory and name it in the YAML metadata or generate an automated one as done here, then you only need to reference the label value in the <code>.bib</code> file. For example this package is built on top of the wonderful {pagedown} package and I will cite it at the end of this sentance using this in the rmd <code>[@R-pagedown]</code> <span class="citation">(<a href="#ref-R-pagedown" role="doc-biblioref">Xie et al. 2021</a>)</span>.</p>
-<p>To get a better understanding of how to include features like these please refer to the {posterdown} <a href="https://github.com/posterdown/wiki">wiki</a>.</p>
-<p><strong><em>Now on to the results!</em></strong></p>
+<p>This package uses the same workflow approach as the R Markdown you know and love. Basically it goes from RMarkdown &gt; Knitr &gt; Markdown &gt; Pandoc &gt; HTML/CSS &gt; PDF. You can even use the bibliography the same way <span class="citation">(Thorne 2019)</span>.</p>
 </div>
 <div id="results" class="section level1">
 <h1>Results</h1>
-<p>Here you may have some figures to show off, bellow I have made a scatterplot with the infamous Iris dataset and I can even reference to the figure automatically like this, <code>Figure \@ref(fig:irisfigure)</code>, Figure <a href="#fig:irisfigure">1</a>.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:irisfigure"></span>
-<img src="mydraft_files/figure-html/irisfigure-1.png" alt="Here is a caption for the figure. This can be added by using the &quot;fig.cap&quot; option in the r code chunk options, see this [link](https://yihui.name/knitr/options/#plots) from the legend himself, [Yihui Xie](https://twitter.com/xieyihui)." width="80%" />
-<p class="caption">
-Figure 1: Here is a caption for the figure. This can be added by using the “fig.cap” option in the r code chunk options, see this <a href="https://yihui.name/knitr/options/#plots">link</a> from the legend himself, <a href="https://twitter.com/xieyihui">Yihui Xie</a>.
-</p>
-</div>
-<p>Maybe you want to show off some of that fancy code you spent so much time on to make that figure, well you can do that too! Just use the <code>echo=TRUE</code> option in the r code chunk options, Figure <a href="#fig:myprettycode">2</a>!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#trim whitespace</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">0</span>,<span class="dv">0</span>))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#plot boxplots</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(iris<span class="sc">$</span>Sepal.Width<span class="sc">~</span>iris<span class="sc">$</span>Species,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="st">&quot;#008080&quot;</span>, </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">border =</span> <span class="st">&quot;#0b4545&quot;</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Sepal Width (cm)&quot;</span>,</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Species&quot;</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:myprettycode"></span>
-<img src="mydraft_files/figure-html/myprettycode-1.png" alt="Boxplots, so hot right now!" width="80%" />
-<p class="caption">
-Figure 2: Boxplots, so hot right now!
-</p>
-</div>
-<p>How about a neat table of data? See, Table <a href="#tab:iristable">1</a>:</p>
+<p>Usually you want to have a nice table displaying some important results that you have calculated. In <code>posterdown</code> this is as easy as using the <code>kable</code> table formatting you are probably use to as per typical R Markdown formatting.</p>
+<p>You can reference tables like so: Table <a href="#tab:mytable">1</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat augue at velit tincidunt semper. Donec elementum porta posuere. Nullam interdum, odio at tincidunt feugiat, turpis nisi blandit eros, eu posuere risus felis non quam. Nam eget lorem odio. Duis et aliquet orci. Phasellus nec viverra est.</p>
 <table>
 <caption>
-<span id="tab:iristable">Table 1: </span>A table made with the <strong>knitr::kable</strong> function.
+<span id="tab:mytable">Table 1: </span>Table caption.
 </caption>
 <thead>
 <tr>
 <th style="text-align:center;">
-Sepal <br> Length
+Sepal.Length
 </th>
 <th style="text-align:center;">
-Sepal <br> Width
+Sepal.Width
 </th>
 <th style="text-align:center;">
-Petal <br> Length
+Petal.Length
 </th>
 <th style="text-align:center;">
-Petal <br> Width
-</th>
-<th style="text-align:center;">
-Species
+Petal.Width
 </th>
 </tr>
 </thead>
@@ -1175,9 +1049,6 @@ Species
 <td style="text-align:center;">
 0.2
 </td>
-<td style="text-align:center;">
-setosa
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -1191,9 +1062,6 @@ setosa
 </td>
 <td style="text-align:center;">
 0.2
-</td>
-<td style="text-align:center;">
-setosa
 </td>
 </tr>
 <tr>
@@ -1209,9 +1077,6 @@ setosa
 <td style="text-align:center;">
 0.2
 </td>
-<td style="text-align:center;">
-setosa
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -1225,9 +1090,6 @@ setosa
 </td>
 <td style="text-align:center;">
 0.2
-</td>
-<td style="text-align:center;">
-setosa
 </td>
 </tr>
 <tr>
@@ -1243,9 +1105,6 @@ setosa
 <td style="text-align:center;">
 0.2
 </td>
-<td style="text-align:center;">
-setosa
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -1259,9 +1118,6 @@ setosa
 </td>
 <td style="text-align:center;">
 0.4
-</td>
-<td style="text-align:center;">
-setosa
 </td>
 </tr>
 <tr>
@@ -1277,9 +1133,6 @@ setosa
 <td style="text-align:center;">
 0.3
 </td>
-<td style="text-align:center;">
-setosa
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -1293,9 +1146,6 @@ setosa
 </td>
 <td style="text-align:center;">
 0.2
-</td>
-<td style="text-align:center;">
-setosa
 </td>
 </tr>
 <tr>
@@ -1311,9 +1161,6 @@ setosa
 <td style="text-align:center;">
 0.2
 </td>
-<td style="text-align:center;">
-setosa
-</td>
 </tr>
 <tr>
 <td style="text-align:center;">
@@ -1328,101 +1175,45 @@ setosa
 <td style="text-align:center;">
 0.1
 </td>
-<td style="text-align:center;">
-setosa
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-5.4
-</td>
-<td style="text-align:center;">
-3.7
-</td>
-<td style="text-align:center;">
-1.5
-</td>
-<td style="text-align:center;">
-0.2
-</td>
-<td style="text-align:center;">
-setosa
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-4.8
-</td>
-<td style="text-align:center;">
-3.4
-</td>
-<td style="text-align:center;">
-1.6
-</td>
-<td style="text-align:center;">
-0.2
-</td>
-<td style="text-align:center;">
-setosa
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-4.8
-</td>
-<td style="text-align:center;">
-3.0
-</td>
-<td style="text-align:center;">
-1.4
-</td>
-<td style="text-align:center;">
-0.1
-</td>
-<td style="text-align:center;">
-setosa
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-4.3
-</td>
-<td style="text-align:center;">
-3.0
-</td>
-<td style="text-align:center;">
-1.1
-</td>
-<td style="text-align:center;">
-0.1
-</td>
-<td style="text-align:center;">
-setosa
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-5.8
-</td>
-<td style="text-align:center;">
-4.0
-</td>
-<td style="text-align:center;">
-1.2
-</td>
-<td style="text-align:center;">
-0.2
-</td>
-<td style="text-align:center;">
-setosa
-</td>
 </tr>
 </tbody>
 </table>
+<p>Or with figures: Figure <a href="#fig:standard-plot">1</a>, or Figure <a href="#fig:morefigs">2</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:standard-plot"></span>
+<img src="mydraft_files/figure-html/standard-plot-1.png" alt="Great figure!" width="80%" />
+<p class="caption">
+Figure 1: Great figure!
+</p>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> iris</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> data<span class="sc">$</span>Sepal.Length, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">y =</span> data<span class="sc">$</span>Sepal.Width, </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> data<span class="sc">$</span>Species,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">19</span>, </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Sepal Length (cm)&quot;</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;Sepal Width (cm)&quot;</span>)</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:morefigs"></span>
+<img src="mydraft_files/figure-html/morefigs-1.png" alt="Amazing, right?!" width="80%" />
+<p class="caption">
+Figure 2: Amazing, right?!
+</p>
+</div>
+</div>
+<div id="next-steps" class="section level1">
+<h1>Next Steps</h1>
+<p>Aliquam sed faucibus risus, quis efficitur erat. Vestibulum semper mauris quis tempus eleifend. Aliquam sagittis dictum ipsum, quis viverra ligula eleifend ut. Curabitur sagittis vitae arcu eget faucibus. In non elementum felis. Duis et aliquam nunc. Nunc pulvinar sapien nunc, vel pretium nisi efficitur in. Fusce fringilla maximus leo et maximus. Fusce at ligula laoreet, iaculis mi at, auctor odio. Praesent sed elementum justo. Aenean consectetur risus rhoncus tincidunt efficitur. Praesent dictum mauris at diam maximus maximus <span class="citation">(Thorne 2019)</span>.</p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>Try <code>posterdown</code> out! Hopefully you like it!</p>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-R-rmarkdown" class="csl-entry">
+Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2021. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
+</div>
 <div id="ref-R-posterdown" class="csl-entry">
 Thorne, Brent. 2019. <em>Posterdown: Generate PDF Conference Posters Using r Markdown</em>. <a href="https://github.com/brentthorne/posterdown">https://github.com/brentthorne/posterdown</a>.
 </div>
@@ -1431,31 +1222,11 @@ Xie, Yihui, Romain Lesur, Brent Thorne, and Xianying Tan. 2021. <em>Pagedown: Pa
 </div>
 </div>
 </div>
-
-</div>
-<div class="main">
-<p>Make <strong>better posters</strong> with RMarkdown + <strong>posterdown</strong>.</p>
-</div>
-<div class="main_bottom">
-<img id="main-img-left" src=https://raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png>
-<img id="main-img-center" src=https://raw.githubusercontent.com/brentthorne/posterdown/master/images/qr-code-black.png>
-<img id="main-img-right" src=https://raw.githubusercontent.com/brentthorne/posterdown/master/images/betterhexlogo.png>
 </div>
 </div>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-(function () {
-var script = document.createElement("script");
-script.type = "text/javascript";
-var src = "true";
-if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-if (location.protocol !== "file:" && /^https?:/.test(src))
-src = src.replace(/^https?:/, '');
-script.src = src;
-document.getElementsByTagName("head")[0].appendChild(script);
-})();
-</script>
+</div>
+
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->

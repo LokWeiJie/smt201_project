@@ -1,0 +1,13 @@
+---
+title: "Site Selection"
+description: |
+  Task 2: Site Selection of the new capital, based on geospatial analysis.
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```

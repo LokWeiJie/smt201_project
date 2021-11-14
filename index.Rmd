@@ -1,7 +1,16 @@
 ---
-title: "SMT201 GIS Project Website"
+title: "SMT201 G1T10 Project Website"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Welcome to our project website!
+  This website encompasses our research and results for the SMT201 project under Prof Kam Tin Seong.
+  Click through the links below or in the navigation bar to find out more about our research!
+author:
+  - name: Lok Wei Jie 
+    affiliation: School of Computing and Information Systems, Singapore Management University
+  - name: Ankit Kumar Rai
+    affiliation: School of Computing and Information Systems, Singapore Management University
+  - name: Sean Michael Power
+    affiliation: School of Computing and Information Systems, Singapore Management University
 site: distill::distill_website
 ---
 
@@ -13,3 +22,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+Read through our project through the following links:
+
+1. [Project Overview](overview.html)
+
+2. [Data Preparation](dataprep.html)
+
+3. [Report of Survey](survey.html)
+
+4. [Site Selection](site.html)
+
+5. [Project Poster](mydraft.html)
+
+6. [Full Report](report.html)
+
+7. [Project Github](https://github.com/LokWeiJie/smt201_project)

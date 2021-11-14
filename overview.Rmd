@@ -2,17 +2,6 @@
 title: "Overview"
 description: |
   An overview of the GIS project by G1T10.
-author:
-  - name: Lok Wei Jie 
-    url: https://google.com
-    affiliation: School of Computing and Information Systems, Singapore Management University
-    affiliation_url: https://scis.smu.edu.sg/
-  - name: Ankit Kumar Rai
-    url: https://google.com
-    affiliation: School of Computing and Information Systems, Singapore Management University
-  - name: Sean Micheal Power
-    url: https://google.com
-    affiliation: School of Computing and Information Systems, Singapore Management University
 date: "`r Sys.Date()`"
 output: 
   distill::distill_article:
@@ -66,6 +55,9 @@ These categories are:
 ![](img/GanttChart201.jpg)
 
 # 3.0 References
+1. https://www.nbcnews.com/news/world/indonesia-move-capital-sinking-jakarta-borneo-n1046651
 
-1. The Asean Post https://theaseanpost.com/article/indonesias-new-capital-hold-due-pandemic
+2. https://www.vox.com/22295302/why-jakarta-sinking-flooding-colonialism 
+
+3. The Asean Post https://theaseanpost.com/article/indonesias-new-capital-hold-due-pandemic
 

@@ -11,13 +11,15 @@ navbar:
       href: dataprep.html
     - text: "Report of Survey"
       href: survey.html
-    - text: "Site Selection Report"
+    - text: "Site Selection"
       href: site.html
     - text: "Project Poster"
       href: mydraft.html
+    - text: "Full Report"
+      href: report.html
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Project Github"
+      href: https://github.com/LokWeiJie/smt201_project
 output: distill::distill_article
