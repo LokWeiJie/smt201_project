@@ -11,3 +11,159 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+# 1.0 Population and Demographic
+Two choropleth maps are generated:
+
+* General Population
+* Working Population
+
+Right click on the **Study_Area_dgn** and select Duplicate Layer. Rename these two layers into **Population** and **Work_Pop** respectively. 
+
+## 1.1 General Population Choropleth Map
+
+For Population layer, right click on the layer and select **Properties… > Symbology**. Change the **symbol type** from **Simple Symbol** to **Graduated** then under value select **Jumlah_Pen** which is the population data. 
+
+Select **Blues** under colour ramp then select **Classify > Equal Count (Quantile)** to see the Classes box get populated. After that click Apply > OK to get the choropleth map of the general population of the study area. The map should look something like this:
+
+![](img/Population.png)
+
+### 1.1.1 Analysis
+From the choropleth map above, the general population density of East Kalimantan matches more urbanised areas, being much denser in mainly the two cities Kota Balikpapan and Samarinda, not just at the city centres but in nearby desa (sub-districts) around the cities. There is also a relatively high population density in the Penajam Paser Utara regency, corresponding to the settlement there.
+
+## 1.2 Working Population Choropleth Map
+
+For Work_Pop first right click on the layer and go to **Attribute Table** then click **Edit > Open Field Calculator**.
+
+![](img/fieldcalc.png)
+
+In Indonesia the working population is from age **20 to 65** so we shall use those data points from the attribute to create a new row. Enter **Work_Pop** into the output field name and select the following data points from **Fields and Values** to create the expression below before pressing OK.
+
+![](img/workpop.png)
+
+After that follow similar steps as the Population layer but when selecting the value in **symbology**, select **Work_pop** instead and continue to follow the steps to generate the choropleth map.
+
+![](img/working_pop.png)
+
+### 1.2.1 Analysis
+From the choropleth map generated above, it is clear that similar to the general population, the majority of the working population in East Kalimantan mainly reside in the Kota Balikpapan and Samarinda cities. From the legend we can also see that the working population is generally around half the total population in each area.
+
+## 1.3 Saving maps
+
+To create a map layout, click on **Project > Layout Manager > Create**. Then name the map accordingly. After that hover over **Add Items** then add **Scale Bar, Label, Map and Legend**.
+
+![](img/layout.png)
+
+After this select **Layout > Export as Image > Save** to save the map as a file on your computer.
+
+# 2.0 Economic and Businesses
+A total of 3 maps will be created for economic and business:
+
+* Healthcare Services
+* Education
+* Government buildings and others
+
+First, create a new group on the left under the layer column, this is to create a neater workspace. Right click on the Layers column and select Create new group.
+
+Next, using the layers related to Economic and Businesses mentioned in our data preparations, categorise the layers into **Healthcare Services**, **Government and Industry** as well as **Education Services**. Use these three categories along with **Study_Area_dgn** and **OpenStreetMap** to create their respective maps. Right click on Study_Area_dgn and then click on **Properties > Symbology > Simple Fill**. Then under **Fill Style**, choose **No Brush**. This will make the map transparent to allow you to see the other layers more clearly. After this you can proceed to save the maps using **Layout Manager**.
+
+
+## 2.1 Healthcare services
+
+![](img/Economic( Healthcare).png)
+
+From the map generated above we can see the health services are clustered around Kota Balikpapan and Samarinda cities. This is also where the majority of the total population in the study area reside so there is justification in the clusters.
+
+## 2.2 Education
+
+![](img/Economic(Education).png)
+
+From the map generated above we can see the education services are clustered around Kota Balikpapan and Samarinda cities. This is also where the majority of the total population in the study area reside so there is justification in the clusters. 
+
+## 2.3 Government Buildings and others
+
+![](img/Economic(Others).png)
+
+From the map generated above we can see the government buildings are clustered around Kota Balikpapan and Samarinda cities. This is also where the majority of the total population in the study area reside so there is justification in the clusters. 
+
+# 3.0 Transport and Communication
+There are 2 maps in this section:
+
+* Transport
+* communication
+
+## 3.1 Layer union
+First separate the data mentioned in the dataset into two categories, Transport Infrastructure and Communications respectively. Using all of the **Street_LN** layers, select **Vector > Geoprocessing Tools > Union**. Select the required layers to combine all the streets together. After each combination, use Union again with the created layer and another **Street_LN layer**. The first step is shown below.
+
+![](img/union.png)
+
+Following this, continue to follow the steps detailed in the first map by adding the required layers in order to get the **Transport Infrastructure** map.
+
+For the **Communications map**, add in the required layers as well similar to the previous maps then save both maps using the **Layout Manager** function.
+
+## 3.2 Transport
+
+![](img/Transportnew.png)
+
+Transport systems in the study area consist of road networks as well as infrastructure that enable travel such as harbours, bus terminals and airports. The road networks cover the majority of the study area while the infrastructure is concentrated around Kota Balikpapan and Samarinda cities. This reflects current world affairs where Balikpapan is known for being a port city. 
+
+## 3.3 Communication
+
+![](img/Communication.png)
+
+For communication systems we have decided to only include phone towers. There is heavy concentration of such infrastructure around Samarinda with others spread around the rest of the study area. Besides Kota Balikpapan and Samarinda Cities, the infrastructure does not correlate to the general population in the study area.
+
+# 4.0 Infrastructure
+For infrastructure, there are a total of 10 maps, separated by their regency. These are:
+
+* Kota Balikpapan
+* Kutai Kartanegara
+* Penajam Paser Utara
+* Kota Samarinda
+
+Similar to the previous maps, separate the points in the Infrastructure dataset by location as well as roads and their respective buildings to be used. After that add them to their respective maps. Follow the steps above in order to create each map and then save them using the **Layout Manager**.
+
+## 4.1 Kota Balikpapan
+
+![](img/Infrastructure(Balik).png)
+
+General map of all infrastructure in Balikpapan. 
+
+![](img/Infrastructure(w_o road) (Balik).png)
+
+With removal of the road line, the map becomes a lot cleaner and easier for analysis. We can see a concentration of infrastructure around Kota Balikpapan but at the same time we also see multiple infrastructures closely following the runway line in the area as well as other major roads highlighted by the open street map.  
+
+![](img/Infrastructure(Balikpapan) Roadline.png)
+
+## 4.2 Kutai Kartanegara
+
+![](img/Infrastruture(Kutaikarta Settlements).png)
+
+This map shows the locations of the existing settlements in the district of Kutai Kartanegara. It is rather obvious that the settlements are mostly in the port city of Kota Balikpapan as well as the mining city of Samarinda. There is an abundance of job opportunities here compared to the other areas in East Kalimantan. 
+
+![](img/Infrastructure(Kutaik all buildings OSM).png)
+
+## 4.3 Penajam Paser Utara
+
+![](img/Infrastructure(Penajampaserutara)Roads.png)
+
+General infrastructure of land roads in Penajam Paser Utara.
+
+![](img/Infrastructure(Penajampaserutara)Others.png)
+
+This map shows the existing settlement in Penajam Paser Utara. The settlement can be considered as a completely self reliant community because it has the basic infrastructure to support itself. Going in depth, the map shows the presence of a gas station, a post office, government offices, tv transmitter towers , worship places as well as hospitals. There are enough amenities for the settlement to be self-sustaining.
+
+## 4.4 Kota Samarinda
+
+![](img/Infrastructure(Samarinda).png)
+
+![](img/Infrastructure(Samarinda)(Other Buildings).png)
+
+With this map, it is clear that a city, in order to run efficiently, has to have some important buildings in it. For example, in the city of Samarinda, a post office for its citizens to send and receive packages, a radio station, tv station as well as terminals for buses. There are also bridges and airport runways, to make sure that while the city is interconnected, it is also connected with the rest of the world. For a country like Indonesia where natural disasters relatively occur more, it is vital to have a radio station. A radio station helps to relay communication to the city in the event of an emergency, when cell phones and electrical as well as network towers are deemed useless. 
+
+![](img/Infrastructure(Samarinda)(Worship).png)
+
+Generally, from the map generated, the worship locations are quite clustered in the city of Samarinda. With most of the population being Malay-Muslims, most of these points are mosques, while the rest of the locations are mostly churches and buddhist temples. With more than 230 out of 284 worship places here are Mosque, it puts into perspective the percentage of population being Muslim. 
+
+# 5.0 Environment and Hazards
+
