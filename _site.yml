@@ -14,7 +14,7 @@ navbar:
     - text: "Site Selection"
       href: site.html
     - text: "Project Poster"
-      href: Poster.html
+      href: poster.html
     - text: "Full Report"
       href: report.html
   right:
