@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# 1.0 Factors for Task 2
+# 1.0 Preparing the factors for Task 2
 
 For Task 2, we have 5 factors to consider, namely,
 
@@ -92,9 +92,16 @@ Repeat this process for all the other layers.
 As all the factors have different scales upon which criteria is measured, it is necessary that factors are standardized before combination using the formula below:
 
 ![](img/formula.jpg)
+We will be standardizing the maps by using the **Raster Calculator** function of GQIS. Take note of the **maximum** and **minimum** of the Proximity HotSpot, which can be done by double-clicking on the layer and scrolling down the **Information tab**. It should look something like this.
 
-Using the raster calculator, you should be able to derive the factor scores layers for all the layers able.
-The dialog should look similar to this.
+![](img/informationtab.jpg)
+For Proximity_Hotspot, the maximum is **88631.007812500** while the minimum is **0**.
+Next, at the Search pane of Geoprocessing Toolbox, panel, type **raster calculator**. We will be utilizing the **Raster Calculator of Raster Analysis**.
+Double-click on it. The dialog window of the Raster calculator appears. At the layers panel, double click on Proximity_HotSpot layer. Under the Expression, fill up the **standardizing formula**. Choose Proximity_Hotspot as the Reference layer and it should look something like this. 
+
+![](img/rastercal.jpg)
+
+Click Run. Once the output is finished, save the layer as into the kalimantan geopackage and name it Factorised_HotSpot.
 
 Repeat these steps for all the factors.
 
@@ -120,7 +127,7 @@ Click on the 3 dots next to Reclassification table.
 
 ![](img/reclasstable.png)
 
-Add 2 rows with binary score of 0 and 1, 1 being suitable and 0 being not suitable, it should look something like this.
+Click on **Add Row** **twice** then fill up the table as shown below then click OK.
 
 ![](img/Reclassify.jpg)
 
@@ -152,7 +159,24 @@ Click **Select features**. Then right click on the layer again. Select **Export 
 
 The newly saved layer should look like this:
 
-![](img/SelectedFeature.jpg)
+![](img/LandSuitabilityw_orec.png)
 
 # 5.0 Site Suitability Analysis
 
+![](img/LANDSUITABILITYOVERVIEW.png)
+
+After much consideration and discussion, we have decided to propose for the new capital city to be in this area of East Kalimantan. After taking into consideration all factors. The reason why it looks like it is so spotty is because of the slope factor, which we gave the highest importance to. Since building a new capital city will be so costly, we decided to choose this spot as it is one of the areas that have the most level ground relative to the other suitable areas of the study area. The rectangle, which is the estimated size of the proposed city area, is around 4726 hectares.
+
+![](img/Site with Forest.png)
+
+As observed, there are a few large forested areas around our proposed site selection. However, there is not a large area that will be needed to be deforested to make way for the new city. There are also many advantages of having a large forested area near a city as it brings around a lot of cooling effects. 
+
+![](img/Site with HotSpot.png)
+
+The proposed site is generally far away from all the hotspots that happened around the area in 2018 and 2019. 
+
+![](img/Site With Road.png)
+
+![](img/OSM.png)
+
+It can be seen that the capital city is definitely accessible by the roads (blue in colour). From the map with the OSM layer, the yellow line is a major roadway then goes across the major rivers and to the airports and Balikpapan’s major urban settlement. This makes the capital highly accessible as it is near the major roadway that essentially spans across the entire East Kalimantan. The proposed city, while near small rivers are not near any major river. Having rivers near the city is beneficial because it brings in economic benefits such as tourism, boating as well as fishing.

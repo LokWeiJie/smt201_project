@@ -151,7 +151,7 @@ General infrastructure of land roads in Penajam Paser Utara.
 
 ![](img/Infrastructure(Penajampaserutara)Others.png)
 
-This map shows the existing settlement in Penajam Paser Utara. The settlement can be considered as a completely self reliant community because it has the basic infrastructure to support itself. Going in depth, the map shows the presence of a gas station, a post office, government offices, tv transmitter towers , worship places as well as hospitals. There are enough amenities for the settlement to be self-sustaining.
+This map shows the existing settlement in Penajam Paser Utara. The settlement can be considered a self-reliant community because it has the basic infrastructure to support itself such as a gas station, a post office, government offices, tv transmitter towers, worship places as well as hospitals. There are enough amenities for the settlement to be self-sustaining.
 
 ## 4.4 Kota Samarinda
 
@@ -159,11 +159,11 @@ This map shows the existing settlement in Penajam Paser Utara. The settlement ca
 
 ![](img/Infrastructure(Samarinda)(Other Buildings).png)
 
-With this map, it is clear that a city, in order to run efficiently, has to have some important buildings in it. For example, in the city of Samarinda, a post office for its citizens to send and receive packages, a radio station, tv station as well as terminals for buses. There are also bridges and airport runways, to make sure that while the city is interconnected, it is also connected with the rest of the world. For a country like Indonesia where natural disasters relatively occur more, it is vital to have a radio station. A radio station helps to relay communication to the city in the event of an emergency, when cell phones and electrical as well as network towers are deemed useless. 
+For a city to run efficiently, it has to have some important buildings in it. For example, in Samarinda, there is a post office, a radio station, tv station as well as terminals for buses. There are also bridges and airport runways to connect the city with the rest of the world. For a country like Indonesia where natural disasters quite frequently, it is vital to have a radio station to relay important information to citizens in the event of an emergency, when cell phones and electrical as well as network towers are deemed useless.  
 
 ![](img/Infrastructure(Samarinda)(Worship).png)
 
-Generally, from the map generated, the worship locations are quite clustered in the city of Samarinda. With most of the population being Malay-Muslims, most of these points are mosques, while the rest of the locations are mostly churches and buddhist temples. With more than 230 out of 284 worship places here are Mosque, it puts into perspective the percentage of population being Muslim. 
+Generally, from the map generated, the worship locations are quite clustered in the city of Samarinda. With most of the population being Malay-Muslims, most of these points are mosques, while the rest of the locations are mostly churches and Buddhist temples. With more than 230 out of 284 worship places being Mosques, it puts into perspective the high proportion of Muslims in the population. 
 
 # 5.0 Environment and Hazards
 For environment and hazards, there are a total of 8 maps separated by regency. These are:
@@ -195,7 +195,7 @@ Most of the agricultural areas lie relatively far away from the city centre, mai
 The map above shows the locations of arable land where farming is occurring in East Kalimantan, specifically, Kutai Kartanegara. With so much land dedicated to agriculture, it is essential that these arable lands are left untouched in order for there to be food security for the people living in the nearby regions. In a recent paper[1], it shows how 82.28% of villages in Kutai Kartanegara are food secure. A new capital city, in order to be a good one needs to have a strong network for food resources. 
 
 ![](img/kutai2.png)
-The layer “shrubs_clipped” actually displays the areas of Kutai Kartanegara where there is dense vegetation [2].  With a lot of corruption, involvement of political agenda and the creation of the North Kalimantan province, the percentage of forested area has dropped from 35% to 15% of the total area in the province. The capital cannot be built on top of dense forests but should also be in range of some. Forests are in fact essential within cities, they reduce urban temperature, purify the air and provide habitats for local wildlife [3]. Forests in the vicinity also prevent flooding, which is especially important considering that being the primary reason for the new capital selection.
+The layer “shrubs_clipped” actually displays the areas of Kutai Kartanegara where there is dense vegetation [2].  With a lot of corruption, involvement of political agenda and the creation of the North Kalimantan province, the percentage of forested area has dropped from 35% to 15% of the total area in the province. The capital cannot be built on top of dense forests but should also be in the range of some. Forests are in fact essential within cities, they reduce urban temperature, purify the air and provide habitats for local wildlife [3]. Forests in the vicinity also prevent flooding, which is especially important considering that being the primary reason for the new capital selection.
 
 ## 5.3 Penajam Paser Utara
 
