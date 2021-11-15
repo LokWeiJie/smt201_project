@@ -1,5 +1,5 @@
 name: "smt201_project"
-title: "SMT201 GIS Project G1T10"
+title: "SMT201 G1T10 Project"
 description: |
   SMT201 GIS Project Website
 output_dir: "_site"
@@ -14,9 +14,9 @@ navbar:
     - text: "Site Selection"
       href: site.html
     - text: "Project Poster"
-      href: mydraft.html
+      href: Poster.html
     - text: "Full Report"
-      href: https://drive.google.com/file/d/14lHqqYYWJ1egYlqnaZuVJiSmVdmBa6ny/view?usp=sharing
+      href: report.html
   right:
     - text: "Home"
       href: index.html

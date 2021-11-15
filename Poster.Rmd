@@ -21,6 +21,9 @@ sectitle_textsize: "28pt"
 sectitle2_textsize: "25pt"
 body_bgcol: "#ADD8E6"
 sectitle_textcol: "#000000"
+columnline_style: none
+sectitle_borderwidth: "1mm"
+sectitle_bordercol: "#000000"
 output: 
   posterdown::posterdown_html:
     self_contained: false
@@ -65,21 +68,30 @@ We decided that the **slope** factor is the most important factor to note when c
 # Recommendation
 ![Fig 2: Selected Site](img/LANDSUITABILITYOVERVIEW.png){width=80%}
 
+
+
 After much consideration, this area that is **shaded in a rectangle** is our recommendation for the new capital city. It is **4723 hectares** in size and while, is not near the major urban settlement in Balikpapan, is near other existing small settlements. This site selection satisfies our size objective since it is between 4500 to 5500 hectares.
 
 ![Fig 3: Forest hotspots](img/Site with HotSpot.png){width=80%}
+
 
 To satisfy our objective of safety, we avoided areas that are **forest fire hotspots** and ensured the recommended location was not along the coast or besides major rivers to avoid flooding.
 
 ![Fig 4: Air+Seaports](img/Site-Ports.png){width=80%}
 
+
+
 ![Fig 5: Air+Seaports](img/Site With Road.png){width=80%}
+
+
 
 To satisfy our objective of accessibility, the new capital must be **accessible by roads**. In the previous map, Land Suitability Map with Air and Sea Ports we can also see there is a **major highway** running through our site, providing ease of transport. The major highway also connects our site to highways and it is positioned in close proximity to **harbours**.
 
 ![Fig 6: Forests](img/Site with Forest.png){width=80%}
 
+
 ![Fig 7: Existing Settlements](img/Site_Settlement.png){width=80%}
+
 
 Our chosen site does not overlap much with **heavy forests** and is also near other settlements while not being situated at a major settlement itself. Both of these in conjunction with the slope layer show ease of development for our site.
 
