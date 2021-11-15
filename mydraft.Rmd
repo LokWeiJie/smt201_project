@@ -63,7 +63,7 @@ The following geospatial analysis techniques were used in our project:
 
 ![Fig 1: MCDA Output](img/LandSuitabilityw_orec.png){width=80%}
 
-We decided that the **slope** factor is the most important factor to note when choosing our site. Thus we used the map above as our base map. The areas that are spotty are **steeper than 15 degrees** and thus an area with high concentration of spots would be unfit for our site. We analyzed the area using our four factors mentioned in issue analysis to choose our site.
+We decided that the **slope** factor is the most important factor. Thus we used the map above as our base map. The areas that are spotty are **steeper than 15 degrees** and thus an area with high concentration of spots would be unfit for our site. We analyzed the area using our four factors mentioned in issue analysis to choose our site.
 
 # Recommendation
 ![Fig 2: Selected Site](img/LANDSUITABILITYOVERVIEW.png){width=80%}
@@ -77,7 +77,7 @@ After much consideration, this area that is **shaded in a rectangle** is our rec
 
 To satisfy our objective of safety, we avoided areas that are **forest fire hotspots** and ensured the recommended location was not along the coast or besides major rivers to avoid flooding.
 
-![Fig 4: Air+Seaports](img/Site-Ports.png){width=80%}
+![Fig 4: Air and Seaports](img/Site-Ports.png){width=80%}
 
 
 
