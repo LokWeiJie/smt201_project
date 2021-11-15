@@ -16,7 +16,7 @@ navbar:
     - text: "Project Poster"
       href: mydraft.html
     - text: "Full Report"
-      href: report.html
+      href: https://drive.google.com/file/d/14lHqqYYWJ1egYlqnaZuVJiSmVdmBa6ny/view?usp=sharing
   right:
     - text: "Home"
       href: index.html
