@@ -2107,6 +2107,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#vectorise-suitable-sites">4.1 Vectorise suitable sites</a></li>
 </ul></li>
+<li><a href="#site-suitability-analysis">5.0 Site Suitability Analysis</a></li>
 </ul>
 </nav>
 </div>
@@ -2165,13 +2166,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <blockquote>
 <p>“<a href="mailto:Factorised_Slope@1" class="email">Factorised_Slope@1</a>” * 0.247 + “<a href="mailto:Factorised_HotSpot@1" class="email">Factorised_HotSpot@1</a>” * 0.221 + “<a href="mailto:Factorized_River@1" class="email">Factorized_River@1</a>” * 0.192 + “<a href="mailto:Factorized_Forest@1" class="email">Factorized_Forest@1</a>”<em>0.115 + “<a href="mailto:Factorised_Road@1" class="email">Factorised_Road@1</a>”</em> <a href="mailto:0.083+%22Factorised_Port@1" class="email">0.083+"Factorised_Port@1</a>“* 0.071 +”Factor_major_settlement</p>
 </blockquote>
-<p>Click on run.</p>
+<p>Click on run. A new recalculated raster layer is created. Export and save this into the kalimantan geopackage, name it AHP_suitability. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
 <h1 id="identifying-suitable-sites">4.0 Identifying suitable sites</h1>
-<p>Once the MCDA model is done, we used a <strong>composite factor score of at least 0.5</strong> to evaluate site suitability, according to many senior planners.To do this, we will open up <strong>Toolbox -&gt;Search for Reclassify by table</strong>. Add 2 tables with binary score of 0 and 1, 1 being suitable and 0 being not suitable, it should look something like this.</p>
+<p>Once the MCDA model is done, we used a <strong>composite factor score of at least 0.55</strong> to evaluate site suitability, based on our current raster band.To do this, we will open up <strong>Toolbox -&gt;Search for Reclassify by table</strong>.</p>
+<p><img src="img/toolbox.png" /></p>
+<p>Click on the 3 dots next to Reclassification table.</p>
+<p><img src="img/reclasstable.png" /></p>
+<p>Add 2 rows with binary score of 0 and 1, 1 being suitable and 0 being not suitable, it should look something like this.</p>
 <p><img src="img/Reclassify.jpg" /></p>
 <p>Ensure that the <strong>output data type</strong> is <strong>Float32</strong>. Click on run.</p>
 <p>The MCDA model should look something like this:</p>
-<p>We will then save it as AHP_capitalcity into the kalimantan geopackage. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
+<p><img src="img/MCDAmodel.jpg" /></p>
+<p>We will then save it as MCDA_model into the kalimantan geopackage. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
 <h2 id="vectorise-suitable-sites">4.1 Vectorise suitable sites</h2>
 <p>From the menu bar, select <strong>Raster -&gt; Conversion -&gt; Polygonize(Raster to Vector)</strong>. Use the following parameters:</p>
 <ul>
@@ -2179,7 +2185,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><strong>Name of the field to create</strong>: Sites.</li>
 <li>Ensure that <strong>Use 8-connectedness</strong> is <strong>unchecked</strong>.</li>
 </ul>
-<p>Click on run. A new temporary layer called Vectorized will be added. Save the final layer into the kalimantan GeoPackage. Name it Potential_Capital_Cities. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
+<p>Click on run. A new temporary layer called Vectorized will be added as shown below.</p>
+<p><img src="img/MCDAoutput.jpg" /></p>
+<p>Only sites which are given the value of 1 in the attribute table on this layer are considered suitable. Right click on the layer and select <strong>Attribute Table &gt; Select by Expression</strong> write <strong>“Sites” = 1</strong> as shown below.</p>
+<p><img src="img/sites.png" /></p>
+<p>Click <strong>Select features</strong>. Then right click on the layer again. Select <strong>Export &gt; Save selected features as</strong> and save this into the kalimantan geopackage, naming it Vectoriesed_SelectedFeature.</p>
+<p>The newly saved layer should look like this:</p>
+<p><img src="img/SelectedFeature.jpg" /></p>
+<h1 id="site-suitability-analysis">5.0 Site Suitability Analysis</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
