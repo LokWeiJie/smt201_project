@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # 1.0 Preparing the factors for Task 2
 
-For Task 2, we have 5 factors to consider, namely,
+For Task 2, we have a few factors to consider, namely,
 
 * Have a size between 4500-5500 hectares
 * Avoid steep slope
@@ -114,7 +114,7 @@ Ensure that the consistency check is below 10% for it to be a good evaluation.
 
 Now, we will compute the Land Suitability Layer by using the factor score derived above. Using the raster calculator of QGIS, we will be using this expression:
 
-> "Factorised_Slope@1" * 0.247  + "Factorised_HotSpot@1" * 0.221 + "Factorized_River@1" * 0.192 + "Factorized_Forest@1"*0.115 + "Factorised_Road@1"* 0.083+"Factorised_Port@1"* 0.071  +"Factor_major_settlement
+> "Factorised_Slope@1" * 0.247  + "Factorised_HotSpot@1" * 0.221 + "Factorized_River@1" * 0.192 + "Factorized_Forest@1" * 0.115 + "Factorised_Road@1" * 0.083+"Factorised_Port@1" * 0.071  +"Factor_major_settlement@1"*0.071
 
 Click on run. A new recalculated raster layer is created. Export and save this into the kalimantan geopackage, name it AHP_suitability. Ensure that the CRS is set to **EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1** before saving.
 
@@ -165,7 +165,7 @@ The newly saved layer should look like this:
 
 ![](img/LANDSUITABILITYOVERVIEW.png)
 
-After much consideration and discussion, we have decided to propose for the new capital city to be in this area of East Kalimantan. After taking into consideration all factors. The reason why it looks like it is so spotty is because of the slope factor, which we gave the highest importance to. Since building a new capital city will be so costly, we decided to choose this spot as it is one of the areas that have the most level ground relative to the other suitable areas of the study area. The rectangle, which is the estimated size of the proposed city area, is around 4726 hectares.
+After much consideration and discussion, we have decided to propose for the new capital city to be in this area of East Kalimantan. After taking into consideration all factors. The reason why it looks like it is so spotty is because of the slope factor, which we gave the highest importance to. Since building a new capital city will be so costly, we decided to choose this spot as it is one of the areas that have the most level ground relative to the other suitable areas of the study area. The rectangle, which is the estimated size of the proposed city area, is around 4723 hectares.
 
 ![](img/Site with Forest.png)
 

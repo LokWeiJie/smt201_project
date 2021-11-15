@@ -86,22 +86,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>SMT201 GIS Project G1T10: Site Selection</title>
+  <title>SMT201 G1T10 Project: Site Selection</title>
 
   <meta property="description" itemprop="description" content="Task 2: Site Selection of the new capital, based on geospatial analysis."/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="SMT201 GIS Project G1T10: Site Selection"/>
+  <meta property="og:title" content="SMT201 G1T10 Project: Site Selection"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Task 2: Site Selection of the new capital, based on geospatial analysis."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="SMT201 GIS Project G1T10"/>
+  <meta property="og:site_name" content="SMT201 G1T10 Project"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="SMT201 GIS Project G1T10: Site Selection"/>
+  <meta property="twitter:title" content="SMT201 G1T10 Project: Site Selection"/>
   <meta property="twitter:description" content="Task 2: Site Selection of the new capital, based on geospatial analysis."/>
 
   <!--/radix_placeholder_meta_tags-->
@@ -2061,7 +2061,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">SMT201 GIS Project G1T10</a>
+<a href="index.html" class="title">SMT201 G1T10 Project</a>
 <a href="overview.html">Overview</a>
 <a href="dataprep.html">Data Preparation</a>
 <a href="survey.html">Report of Survey</a>
@@ -2112,7 +2112,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </nav>
 </div>
 <h1 id="preparing-the-factors-for-task-2">1.0 Preparing the factors for Task 2</h1>
-<p>For Task 2, we have 5 factors to consider, namely,</p>
+<p>For Task 2, we have a few factors to consider, namely,</p>
 <ul>
 <li>Have a size between 4500-5500 hectares</li>
 <li>Avoid steep slope</li>
@@ -2166,7 +2166,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Ensure that the consistency check is below 10% for it to be a good evaluation.</p>
 <p>Now, we will compute the Land Suitability Layer by using the factor score derived above. Using the raster calculator of QGIS, we will be using this expression:</p>
 <blockquote>
-<p>“<a href="mailto:Factorised_Slope@1" class="email">Factorised_Slope@1</a>” * 0.247 + “<a href="mailto:Factorised_HotSpot@1" class="email">Factorised_HotSpot@1</a>” * 0.221 + “<a href="mailto:Factorized_River@1" class="email">Factorized_River@1</a>” * 0.192 + “<a href="mailto:Factorized_Forest@1" class="email">Factorized_Forest@1</a>”<em>0.115 + “<a href="mailto:Factorised_Road@1" class="email">Factorised_Road@1</a>”</em> <a href="mailto:0.083+%22Factorised_Port@1" class="email">0.083+"Factorised_Port@1</a>“* 0.071 +”Factor_major_settlement</p>
+<p>“<a href="mailto:Factorised_Slope@1" class="email">Factorised_Slope@1</a>” * 0.247 + “<a href="mailto:Factorised_HotSpot@1" class="email">Factorised_HotSpot@1</a>” * 0.221 + “<a href="mailto:Factorized_River@1" class="email">Factorized_River@1</a>” * 0.192 + “<a href="mailto:Factorized_Forest@1" class="email">Factorized_Forest@1</a>” * 0.115 + “<a href="mailto:Factorised_Road@1" class="email">Factorised_Road@1</a>” * <a href="mailto:0.083+%22Factorised_Port@1" class="email">0.083+"Factorised_Port@1</a>” * 0.071 +“<a href="mailto:Factor_major_settlement@1" class="email">Factor_major_settlement@1</a>”*0.071</p>
 </blockquote>
 <p>Click on run. A new recalculated raster layer is created. Export and save this into the kalimantan geopackage, name it AHP_suitability. Ensure that the CRS is set to <strong>EPSG:23845 - DGN95 / Indonesia TM-3 zone 54.1</strong> before saving.</p>
 <h1 id="identifying-suitable-sites">4.0 Identifying suitable sites</h1>
@@ -2196,7 +2196,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="img/LandSuitabilityw_orec.png" /></p>
 <h1 id="site-suitability-analysis">5.0 Site Suitability Analysis</h1>
 <p><img src="img/LANDSUITABILITYOVERVIEW.png" /></p>
-<p>After much consideration and discussion, we have decided to propose for the new capital city to be in this area of East Kalimantan. After taking into consideration all factors. The reason why it looks like it is so spotty is because of the slope factor, which we gave the highest importance to. Since building a new capital city will be so costly, we decided to choose this spot as it is one of the areas that have the most level ground relative to the other suitable areas of the study area. The rectangle, which is the estimated size of the proposed city area, is around 4726 hectares.</p>
+<p>After much consideration and discussion, we have decided to propose for the new capital city to be in this area of East Kalimantan. After taking into consideration all factors. The reason why it looks like it is so spotty is because of the slope factor, which we gave the highest importance to. Since building a new capital city will be so costly, we decided to choose this spot as it is one of the areas that have the most level ground relative to the other suitable areas of the study area. The rectangle, which is the estimated size of the proposed city area, is around 4723 hectares.</p>
 <p><img src="img/Site%20with%20Forest.png" /></p>
 <p>As observed, there are a few large forested areas around our proposed site selection. However, there is not a large area that will be needed to be deforested to make way for the new city. There are also many advantages of having a large forested area near a city as it brings around a lot of cooling effects.</p>
 <p><img src="img/Site%20with%20HotSpot.png" /></p>
