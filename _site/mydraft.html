@@ -16,6 +16,7 @@ Font-awesome icons ie github or twitter
 <!--
 Google fonts api stuff
 -->
+<link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet'>
 
 
 
@@ -713,12 +714,12 @@ padding: 0;
 }
 body {
 margin: 0;
-font-size: 45px;
+font-size: 30px;
 width: 33.11in;
 height: 23.39in;
 padding: 0;
 text-align: justify;
-font-family: Palatino;
+font-family: Helvetica;
 }
 .poster_wrap {
 width: 33.11in;
@@ -762,7 +763,7 @@ transform: translateY(-50%);
 -webkit-transform: translateY(-50%);
 }
 #title {
-font-family: Palatino;
+font-family: Helvetica;
 }
 /* unvisited link */
 a:link {
@@ -786,9 +787,9 @@ a:active {
 color: #ff6e40;
 }
 .poster_body {
--webkit-column-count: 5; /* Chrome, Safari, Opera */
--moz-column-count: 5; /* Firefox */
-column-count: 5;
+-webkit-column-count: 4; /* Chrome, Safari, Opera */
+-moz-column-count: 4; /* Firefox */
+column-count: 4;
 -webkit-column-fill: auto;
 -moz-column-fill: auto;
 column-fill: auto;
@@ -996,15 +997,32 @@ font-size: 20pt;
 <div class='poster_body'>
 <div id="problem" class="section level1">
 <h1>Problem</h1>
-<p>Jakarta is sinking,</p>
-<p>Welcome to <code>posterdown</code> ! This is my attempt to provide a semi-smooth workflow for those who wish to take their R Markdown skills to the conference world. Most features from R Markdown are available in this package such as Markdown section notation, figure captioning, and even citations like this one <span class="citation">(Allaire et al. 2021)</span>. The rest of this example poster will show how you can insert typical conference poster features into your own document.</p>
-<div id="objectives" class="section level2">
-<h2>Objectives</h2>
-<ol style="list-style-type: decimal">
-<li>Easy to use reproducible poster design.</li>
-<li>Integration with R Markdown.</li>
-<li>Easy transition from <code>posterdown</code> to <code>pagedown</code> report or manuscript documents <span class="citation">(Xie et al. 2021)</span>.</li>
-</ol>
+<p>To propose a suitable site for the relocation of the Indonesian capital. A suitable site would satisfy multiple factors including:</p>
+<ul>
+<li>Size
+<ul>
+<li>Area between 4500 to 5500 hectares</li>
+</ul></li>
+<li>Safety
+<ul>
+<li>Away from potential natural disaster risk areas like sea coasts and major rivers</li>
+<li>Not in areas prone to forest fire</li>
+</ul></li>
+<li>Accessibility
+<ul>
+<li>Highly accessible by roads</li>
+<li>Close proximity to airports and seaports</li>
+</ul></li>
+<li>Ease of development
+<ul>
+<li>Avoid steep slopes</li>
+<li>Avoid natural forest</li>
+<li>Near current existing settlement but not at current major settlement</li>
+</ul></li>
+</ul>
+<div id="motivation" class="section level2">
+<h2>Motivation</h2>
+<p>Jakarta, the sinking city, is experiencing first-hand the effects of rising sea levels. Additionally, it also suffers from overpopulation that burdens its water piping system. This forces residents to pump water from underground, further lowering the city foundations. A new capital will ease the overcrowding and thus the sinking of the current sea-side capital Jakarta.</p>
 </div>
 </div>
 <div id="methods" class="section level1">
@@ -1211,14 +1229,8 @@ Figure 2: Amazing, right?!
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-R-rmarkdown" class="csl-entry">
-Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2021. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
-</div>
 <div id="ref-R-posterdown" class="csl-entry">
 Thorne, Brent. 2019. <em>Posterdown: Generate PDF Conference Posters Using r Markdown</em>. <a href="https://github.com/brentthorne/posterdown">https://github.com/brentthorne/posterdown</a>.
-</div>
-<div id="ref-R-pagedown" class="csl-entry">
-Xie, Yihui, Romain Lesur, Brent Thorne, and Xianying Tan. 2021. <em>Pagedown: Paginate the HTML Output of r Markdown with CSS for Print</em>. <a href="https://github.com/rstudio/pagedown">https://github.com/rstudio/pagedown</a>.
 </div>
 </div>
 </div>

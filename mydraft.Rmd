@@ -7,12 +7,14 @@ author:
 affiliation:
   - address: Singapore Management University
 
-column_numbers: 5
+column_numbers: 4
 primary_colour: "#1e3d59"
 secondary_colour: "#ffc13b"
 accent_colour: "#ff6e40"
 poster_height: "23.39in"
 poster_width: "33.11in"
+body_textsize: "30px"
+font_family: Helvetica
 output: 
   posterdown::posterdown_html:
     self_contained: false
@@ -25,15 +27,24 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Problem
 
-Jakarta is sinking, 
+To propose a suitable site for the relocation of the Indonesian capital. A suitable site would satisfy multiple factors including:
 
-Welcome to `posterdown` ! This is my attempt to provide a semi-smooth workflow for those who wish to take their R Markdown skills to the conference world. Most features from R Markdown are available in this package such as Markdown section notation, figure captioning, and even citations like this one [@R-rmarkdown]. The rest of this example poster will show how you can insert typical conference poster features into your own document. 
+* Size
+  + Area between 4500 to 5500 hectares
+* Safety
+  + Away from potential natural disaster risk areas like sea coasts and major rivers
+  + Not in areas prone to forest fire
+* Accessibility
+  + Highly accessible by roads
+  + Close proximity to airports and seaports
+* Ease of development
+  + Avoid steep slopes
+  + Avoid natural forest
+  + Near current existing settlement but not at current major settlement
 
-## Objectives
+## Motivation
 
-1. Easy to use reproducible poster design. 
-2. Integration with R Markdown.
-3. Easy transition from `posterdown` to `pagedown` report or manuscript documents [@R-pagedown].
+Jakarta, the sinking city, is experiencing first-hand the effects of rising sea levels. Additionally, it also suffers from overpopulation that burdens its water piping system. This forces residents to pump water from underground, further lowering the city foundations. A new capital will ease the overcrowding and thus the sinking of the current sea-side capital Jakarta.
 
 # Methods
 
